@@ -1,0 +1,327 @@
+/*======================Google Fonts=====================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Courgette&family=Exo:wght@500&family=Lobster+Two&family=Source+Serif+Pro:wght@600&display=swap');
+
+/*========================= BASE =======================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+a:hover {
+    background-color: rgb(61, 61, 61);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+    transform: translateY(5px);
+
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    padding: 10px;
+    border-radius: 50px;
+    width: max-content;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.container2 {
+    background: linear-gradient(to right, lightgrey 30%, rgb(51, 51, 152) 30%);
+    z-index: 1;
+    height: 600px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 640px;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 650px;
+}
+
+
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-3 {
+    flex-basis: 50%;
+    min-width: 200px;
+    display: grid;
+    grid-area: auto;
+    
+}
+
+
+img.my-hero {
+    width: 221px;
+    margin: 50px 140px;
+    border-radius: 115px;
+
+}
+
+img.my-hero2 {
+    display: none;
+}
+
+h1.hello {
+    font-size: 30px;
+    font-family: 'Courgette';
+    margin: 10px 0;
+    color: rgb(59, 59, 59);
+}
+
+h1.name {
+    font-size: 45px;
+    font-family: 'Lobster Two';
+    margin: 10px 0;
+    color: rgb(31, 31, 31);
+}
+
+p.intro {
+    font-size: 15px;
+    font-family: 'exo';
+    margin: 15px 0;
+    color: rgb(8, 8, 8);
+}
+
+.btn {
+    display: inline-block;
+    color: aliceblue;
+    background-color: dodgerblue;
+    border-radius: 30px;
+    margin: 30px 10px;
+    padding: 8px 30px;
+}
+
+.col-3 img {
+    background-repeat: none;
+    background-size: cover;
+}
+#contact-page{
+    display: flex;
+    height: 700px;
+    justify-content: space-around;
+    margin: 0px 20px;
+    align-items: center;
+    line-height: 2.5;
+ 
+}
+.contacticons{
+    text-align: center;
+    line-height: 3;
+    font-size: 1.5em;
+   
+}
+
+.contacticons a{
+    font-family: 'exo';
+
+}
+
+.contactform{
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.contactform .title {
+    font-size: large;
+    font-weight: bold;
+    position:relative;
+}
+.contactform .title::before{
+    height: 5px;
+    content: '';
+    left:0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgb(255, 5, 5), rgb(4, 4, 5) );
+    width:80px;
+}
+
+
+form .users-details .input-box{
+    width: 50%;
+    font-family: 'exo';
+
+}
+
+.users-details .input-box input{
+    height: 40px ;
+    width: 16rem;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid dodgerblue;
+    padding-left: 15px;
+    font-family: 'unicons-line';
+}
+.form-button{
+    margin: 10px 0px;
+}
+
+.form-button input{
+    color: rgb(19, 0, 0);
+    background-color: rgb(245, 239, 239);
+    border-radius: 5px;
+    border: 1px solid dodgerblue;
+    height: 27px;
+    width: 70px;
+    font-family: 'exo';
+    cursor: pointer;
+    
+}
+
+.form-button input:hover{
+    color: white;
+    background-color: dodgerblue;
+    transition: 1.5s ;
+    transform: translateY(10px);
+
+}
+
+.form-button input:focus{
+    background-color: rgba(255, 0, 162, 0.694);
+  
+}
+
+.menu-icon {
+    display: none;
+    width: 20px;
+}
+
+
+/* media query for responsiveness */
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        overflow: hidden;
+        transition: 1.0s;
+        height: max-content;
+        background: radial-gradient(grey, white);
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 50px;
+    }
+
+    nav ul li a {
+        color: rgba(0, 0, 0, 0.753);
+        padding: 5px 32px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    img.my-hero {
+        display: none;
+    }
+
+    img.my-hero2 {
+
+        display: block;
+        width: 130px;
+        margin: auto;
+    }
+
+    .btn {
+        margin-top: 10px;
+        font-size: 14px;
+        padding: 9px 24px;
+        margin-left: 0;
+    }
+
+    #contact-page{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+        height: 700px;
+    }
+
+   
+    .contacticons{
+        display: inline-flex;
+        font-size: 1rem;
+    }
+
+    .contacticons a {
+        font-family: 'exo';
+        font-size: 1rem;
+        font-variant-caps: all-small-caps;
+        padding: 13px;
+    }
+
+    #icons{
+        font-size: 2.3rem;
+    }
+
+    form{
+        width: min-content;
+    }
+}
