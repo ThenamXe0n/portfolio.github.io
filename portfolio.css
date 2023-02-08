@@ -254,10 +254,9 @@ form .users-details .input-box{
     nav ul {
         position: absolute;
         text-align: center;
-        left: 0;
+        left: 5%;
         bottom: 0px;
-        width: 100%;
-        margin: 0px 15px;
+        width: 90%;
         overflow: hidden;
         transition: 1.0s;
         height: 60vh;
