@@ -247,18 +247,39 @@ form .users-details .input-box{
 /* media query for responsiveness */
 
 @media screen and (max-width: 800px) {
+    nav{
+        display:flex;
+    }
+    
     nav ul {
         position: absolute;
         text-align: center;
         left: 0;
-        top: 70px;
+        bottom: 0px;
         width: 100%;
+        margin: 0px 15px;
         overflow: hidden;
         transition: 1.0s;
-        height: max-content;
+        height: 60vh;
         background: radial-gradient(grey, white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
     }
 
+    nav ul::before {
+        height: 6px;
+        content: '';
+        top: 12px;
+        position: absolute;
+        background: linear-gradient(to right, rgb(0 199 255 / 58%), rgb(0 0 255 / 58%));
+        width: 60px;
+        border-radius: 3rem;
+        align-self: center;
+    }
+    
     nav ul li {
         display: block;
         margin-right: 50px;
