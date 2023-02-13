@@ -243,6 +243,142 @@ form .users-details .input-box{
     width: 20px;
 }
 
+#skill-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'caveat';
+    margin: 5px 0px;
+}
+
+#block-btn h2{
+    font-size: 1.2rem ;
+    font-family: 'rajdhani' ;
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+.skill-heading h3 {
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: 'rajdhani';
+    color: slategray;
+   
+}
+
+.icons {
+    font-size: 4rem;
+    color: rebeccapurple;
+    margin: 40px 0;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+    
+
+}
+
+.block1{
+
+    border: 2px solid grey;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.block2{
+    
+    border: 2px solid grey;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.block3{
+    border: 2px solid grey;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.block1, .block2 , .block3{
+    box-shadow: 7px 7px 20px grey, 15px 12px 6px ghostwhite;
+    cursor: pointer;
+    
+}
+
+#block-btn:hover{
+    background-color: rgba(30, 143, 255, 0.751);
+    transform: translateY(10px);
+    transition: 1.2s;
+}
+
+
+.mastering-level{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: 30rem;
+    line-height: 3rem;
+    width: 40vw;
+    margin-top:40px;
+    padding: 10px;
+   
+
+}
+
+#html{
+    font-family: 'tourney';
+    font-size: larger;
+    color:dodgerblue;
+}
+#html::before{
+    content: '';
+    height: 10px;
+    width: 35rem;
+    position: absolute;
+    border-radius: 5px;
+    background: dodgerblue;
+}
+
+#css{
+    font-family: 'tourney';
+    font-size: larger;
+    color: rgb(192, 0, 32);
+}
+#css::before{
+    content: '';
+    height: 10px;
+    width: 27rem;
+    position: absolute;
+    background: rgb(192, 0, 32);
+    border-radius: 5px;
+}
+#js{
+    font-family: 'tourney';
+    font-size: larger;
+    width: inherit;
+    color:rgb(170, 170, 0);
+}
+#js::before{
+    content: '';
+    height: 10px;
+    width: 20rem;
+    position: absolute;
+    background: rgb(141, 141, 0);
+    border-radius: 16px;}
+
 
 /* media query for responsiveness */
 
@@ -344,4 +480,54 @@ form .users-details .input-box{
     form{
         width: min-content;
     }
+     .block1 , .block2 , .block3{
+        margin-top: 21px ;
+        padding: 22px;
+    }
+     
+    .skill-container{
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .mastering-level{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: inherit;
+        left: 30rem;
+        line-height: 3rem;
+        padding: 13px;
+        margin-top: 48px;
+    }
+    
+    #html::before{
+        content: '';
+        height: 5px;
+        width: 17.5rem;
+        position: absolute;
+        border-radius: 5px;
+        background: dodgerblue;
+    }
+    
+    
+    #css::before{
+        content: '';
+        height: 5px;
+        width: 13.5rem;
+        position: absolute;
+        background: rgb(192, 0, 32);
+        border-radius: 5px;
+    }
+    
+    #js::before{
+        content: '';
+        height: 5px;
+        width: 10rem;
+        position: absolute;
+        background: rgb(141, 141, 0);
+        border-radius: 16px;}
+    
+
+    
 }
