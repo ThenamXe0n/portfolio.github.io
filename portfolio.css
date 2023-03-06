@@ -153,6 +153,11 @@ p.intro {
     background-repeat: none;
     background-size: cover;
 }
+
+#contactus{
+    background-image:url(images/contactUs.jpg);
+    background-size: cover;
+}
 #contact-page{
     display: flex;
     height: 700px;
@@ -567,6 +572,10 @@ footer {
         font-size: 14px;
         padding: 9px 24px;
         margin-left: 0;
+    }
+    
+    #contactus{
+        background-image:none;
     }
 
     #contact-page{
