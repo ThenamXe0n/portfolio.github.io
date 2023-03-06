@@ -175,9 +175,10 @@ p.intro {
 }
 
 .contactform{
-    max-width: 700px;
-    background-color: #fff;
-    border-radius: 50px;
+    max-width: 706px;
+    background-color: #e3b8ff8f;
+    border-radius: 10px;
+    padding: 65px;
 }
 .contactform .title {
     font-size: large;
